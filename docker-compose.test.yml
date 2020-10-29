@@ -1,0 +1,12 @@
+---
+version: "3.5"
+
+services:
+  f32_sut:
+    build:
+      context: build/scripts/fedora
+      args:
+        FEDORA_VERSION: "32"
+    command: bash -l /test.sh
+    volumes:
+      - ./build/scripts/fedora/test.sh:/test.sh

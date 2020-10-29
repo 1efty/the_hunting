@@ -98,7 +98,7 @@ EOF
 
 function install_zap() {
     curl -sSL https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2.9.0_Crossplatform.zip -o zap.zip
-    unzip zap.zip && mv ZAP_2.9.0 zap
+    unzip zap.zip && mv ZAP_2.9.0 ~/zap
     rm -rf zap.zip
 }
 
